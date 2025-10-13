@@ -14,25 +14,8 @@
         - [ ] Any time after
         -->
         <title>Toon Sportsfest</title>
-        <link rel="icon" href="./img/logo.jpg">
-        <style>
-            /* Style rules go here. */
-            .heading {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: #5BC0EB;
-                font-weight: 1000;
-                font-size: 40px;
-                text-align: center;
-            }
-
-            .sub-heading {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: #FF8C36;
-                font-weight: 500;
-                font-size: 26px;
-                text-align: center;
-            }
-        </style>
+        <link rel="icon" href="./img/toon-sports.jpeg">
+        <link href="styles.css" rel="stylesheet">
     </head>
     
     <body>
@@ -51,18 +34,25 @@
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <img id="header-img" src="./img/logo500.png"/>
-        <h1 class="heading">Toon Sportsfest</h1>
-        <h3 class="sub-heading">
+        <div class="header">
             <div>
-                Join the Fun!
-            </div> 
-            <div>
-                Watch the Toon Sportsfest
+                <img id="header-img" src="./img/toon-sports.jpeg" />
             </div>
-        </h3>
-        <button type="button">RSVP</button>
-        <button type="button">View All Events</button>
+            <h1 class="heading-text">Toon Sportsfest</h1>
+            <h3 class="sub-heading-text">
+                <div id="header-left">
+                    Join the Fun!
+                </div> 
+                <div id="header-right">
+                    Watch the Amazing Events!
+                </div>
+            </h3>
+            <div class="button-container">
+                <button class="header-button" type="button">RSVP</button>
+                <button class="header-button" type="button">View All Events</button>
+            </div>
+        </div>
+
 
         
         <!-- about
@@ -78,14 +68,20 @@
         - [ ] Any time between / after
         --> 
         <h2>About the Event</h2>
-        <p>The Toon Sportsfest aims to provide a fun and enthralling experience 
-            for people who are fan of cartoons. 
-            We aim allow people a chance to watch  
-            amazing sports competition with cartoon characters.
-            The Toon Sportsfest is for people of all ages and 
-            wants to provide a fun and enjoyable for the whole family 
-            with your favorite and new cartoon characters.
-        </p>
+        <div class="event-info">
+            <p>
+                The Toon Sportsfest aims to provide a fun and enthralling experience 
+                for people who are fan of cartoons. 
+                We aim allow people a chance to watch  
+                amazing sports competition with cartoon characters.
+            </p>
+            <p>
+                The Toon Sportsfest is for people of all ages and 
+                wants to provide a fun and enjoyable for the whole family 
+                with your favorite and new cartoon characters.
+            </p>
+        </div>
+
        <p>
         We believe that cartoons can teach everyone really important life lessons.
         This video delves into life lessons that can be learned from cartoons.
@@ -114,17 +110,17 @@
         --> 
         <h2>Event Schedule</h2>
 
-        <img alt="Cartoons playing Basketball" src="./img/basketball.png" width="340" height="240"/>
+        <img alt="Cartoons playing Basketball" src="./img/basketball.jpeg" width="340" height="240"/>
         <h3>Basketball</h3>
         <p>Cartoons play a thrilling game of basketball</p>
             
-        <img alt="Cartoons playing soccer" src="./img/soccer.png" width="340" height="240"/>
+        <img alt="Cartoons playing soccer" src="./img/soccer.jpeg" width="340" height="240"/>
         <h3>Soccer</h3>
         <p>Cartoons engaging in the beatutiful game to see who is best.</p>
 
-        <img alt="Image description" src="./img/example.png"/>
-        <h3>Event Activity 2</h3>
-        <p>Description of event activity.</p>
+        <img alt="Image description" src="./img/tennis.jpeg"/>
+        <h3>Tennis</h3>
+        <p>Cartoons engaging in a enthralling match of tennis</p>
 
         <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
         <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
@@ -163,6 +159,10 @@
         </a>
             
         <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+         <div class="footer">
+            <a href="#">Learn More</a>
+            <a href="#">Contact</a>
+         </div>
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
 
     </body>
