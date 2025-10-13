@@ -33,7 +33,9 @@ body {
     font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
 
     /* Put space around the edges of the webpage */
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px
 }
 
 /*** Text ***
@@ -77,27 +79,21 @@ a * {
     margin-bottom: 45px;
     text-align: center;
 }
-.heading-text {
+#heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5BC0EB;
     font-weight: 1000;
-    font-size: 60px;
+    font-size: 44px;
+    margin-bottom: 20px;
 }
 
-.sub-heading-text {
+#sub-heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FF8C36;
     font-weight: 500;
-    font-size: 46px;
-}
-
-#header-left {
-    display: inline;
-    width: 40%;
-}
-#header-right{
-    display: inline;
-    width: 60%;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 #header-img {
@@ -108,16 +104,21 @@ a * {
 }
 .button-container {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 12px;
 }
 .header-button {
     /* Example Style, replace with your own! */
     background-color: #FF8C36;    /* button color */
     color: white;               /* text color */
     border: none;               /* hides the default border */
-    padding: 5px 12px;          /* space between button's text and edge */
+    padding: 15px 12px;          /* space between button's text and edge */
     border-radius: 5px;         /* curved edges instead of square */
-    margin: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     cursor: pointer; 
+    min-width: 22px;
 }
 
 button:hover {
@@ -126,31 +127,6 @@ button:hover {
 
 
 }
-
-/*** header ***
-  
-  Purpose:
-  - Add style rules for your website's header section
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
-
-.header { /* Example A: This styles elements with class="header" */
-    
-}
-
-/*** footer ***
-  
-  Purpose:
-  - Add style rules for your website's footer section
-
-  When To Modify:
-  - [ ] Project 3 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
 
 .footer {
   left: 0;
