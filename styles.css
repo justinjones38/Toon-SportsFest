@@ -76,47 +76,47 @@ a * {
 
 .header {
     padding-top: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
     text-align: center;
 }
 #heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5BC0EB;
-    font-weight: 1000;
-    font-size: 44px;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 60vw, 2.8rem);
     margin-bottom: 20px;
 }
 
 #sub-heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FF8C36;
-    font-weight: 500;
-    font-size: clamp(32px, 10vw, 38px);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 45vw, 1.8rem);
     margin-top: 0;
     margin-bottom: 25px;
 }
 
 #header-img {
-    width: 80%;
-    min-width: 200px;
-    max-width: 350px;
+    width: clamp(13rem, 60%, 20rem);
     margin-top: 40px;
 }
 .button-container {
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
+    height: clamp(3rem, 7vh, 7rem);
 }
 .header-button {
     /* Example Style, replace with your own! */
     background-color: #FF8C36;    /* button color */
     color: white;               /* text color */
     border: none;               /* hides the default border */
-    padding: 15px 12px;          /* space between button's text and edge */
-    border-radius: 5px;         /* curved edges instead of square */
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    border-radius: 0.7rem;
+    height: clamp(3rem, 8vh, 5rem);
+    width: clamp(15rem, 15vw, 18rem);
+    font-size: clamp(1.2rem, 8vw, 1.4rem);
+    margin-right: 0.5rem;
+    margin-bottom: 8px;
     cursor: pointer; 
 }
 
