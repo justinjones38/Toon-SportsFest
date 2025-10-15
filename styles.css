@@ -7,6 +7,11 @@
   When To Modify:
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
     background-color: var(--bg-color);
 }
@@ -31,11 +36,9 @@ body {
     font-size: 16px;
     color: var(--text-color);
     font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
-
-    /* Put space around the edges of the webpage */
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 40px
+    /* Put space around the edges of the webpage */
 }
 
 /*** Text ***
@@ -75,48 +78,47 @@ a * {
 }
 
 .header {
-    padding-top: 5px;
-    margin-bottom: 65px;
+    padding-top: 0.94rem;
+    margin-bottom: 1.8rem;
     text-align: center;
 }
 #heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5BC0EB;
     font-weight: 800;
-    font-size: clamp(2.2rem, 60vw, 2.8rem);
-    margin-bottom: 20px;
+    font-size: clamp(2.2rem, 5vw, 2.8rem);
+    margin-bottom: 0.8rem;
 }
 
 #sub-heading-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FF8C36;
     font-weight: 600;
-    font-size: clamp(1.5rem, 45vw, 1.8rem);
-    margin-top: 0;
-    margin-bottom: 25px;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    margin-bottom: 1.2rem;
 }
 
 #header-img {
     width: clamp(13rem, 60%, 20rem);
     margin-top: 40px;
+    max-width: 100%
 }
 .button-container {
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 19px;
-    height: clamp(3rem, 7vh, 7rem);
-}
+    height: clamp(4rem, 5vh, 7rem);
+  }
 .header-button {
     /* Example Style, replace with your own! */
     background-color: #FF8C36;    /* button color */
     color: white;               /* text color */
     border: none;               /* hides the default border */
     border-radius: 0.7rem;
-    height: clamp(3rem, 8vh, 5rem);
+    height: clamp(3rem, 8vh, 4rem);
     width: clamp(15rem, 15vw, 18rem);
-    font-size: clamp(1.2rem, 8vw, 1.4rem);
-    margin-right: 0.5rem;
-    margin-bottom: 8px;
+    font-size: clamp(1.2rem, 6vw, 1.4rem);
+    margin-right: 0.7rem;
+    margin-bottom: 0.3rem;
     cursor: pointer; 
 }
 
