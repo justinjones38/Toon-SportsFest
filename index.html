@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Toon Sportsfest</title>
+        <link rel="icon" href="./img/logo.jpg">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#header-container">Home</a></li>
+                <li><a href="#event-info">Event Information</a></li>
+                <li><a href="#event-schedule">Schedule</a></li>
+                <li><a href="#links">Links </a></li>
+            </ul>
+        </div>
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container" id="header-container">
+            <div id="img-container">
+                <img id="header-img" alt="logo" src="./img/logo.jpg"/>
+            </div>
+            <div class="header-item">
+                <h1>Toon Sportsfest</h1>
+            </div>
+            <div class="header-item">
+                <h3>Sports get a toon-up!</h3>
+            </div>
+            <div class="button-container">
+                <button class="header-button" type="button">Guidelines</button>
+                <button class="header-button" type="button">Featured Events</button>
+            </div>
+
+        </div>
+
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div class="event-info-container">
+            <h2 id="event-info">About the Event</h2>
+            <iframe width="360" src="https://www.youtube.com/embed/ZWdG7k8d2l0?si=7y-WJmPahxNcdxs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="event-description">The Toon Sportsfest aims to provide a fun and 
+                enthralling experience for people who are fan 
+                of cartoons. We aim allow people a chance to watch 
+                their amazing sports competition with cartoon characters. 
+                The Toon Sportsfest is for people of all ages and wants 
+                to provide a fun and enjoyable for the whole family with 
+                your favorite and new cartoon characters.</p>
+        </div>
+
+
+        <h3>What to Expect</h3>
+        <h4>Tag Line</h4>
+        <ul>
+            <li> <b>Bullet 1:</b> <i>Description</i></li>
+            <li> <b>Bullet 2:</b> <i>Description</i></li>
+            <li> <b>Bullet 3:</b> <i>Description</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="event-schedule">Event Schedule</h2>
+
+        <div class="event-container">
+            <div class="event-item">
+                <img alt="Basketball" src="./img/basketball.jpeg" />
+                <h3>Basketball</h3>
+                <p>Come watch toons playing a thrilling game of basketball</p>
+            </div>
+
+                
+            <div class="event-item">
+                <img alt="Soccer" src="./img/soccer.jpeg" />
+                <h3>Soccer</h3>
+                <p>Enjoy toons engaging in the beautiful game</p>
+            </div>
+
+
+            <div class="event-item">
+                <img alt="Tennis" src="./img/tennis.jpeg" />
+                <h3>Tennis</h3>
+                <p>Watch toons have fun in a enjoyable tennis match</p>
+            </div>
+        </div>
+
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://dreamfarmstudios.com/blog/11-benefits-of-animation-for-kids-adults-you-may-not-have-thought-about/?utm_source=chatgpt.com">
+            <article>
+                <h3>Read about the benefits of cartoons to children and adults</h3>
+                <p>This article discusses 11 beenfits of animation to children and adults that are not often discussed </p>
+            </article>
+        </a>
+
+        <a class="block" href="https://www.vice.com/en/article/therapists-explain-how-cartoons-affect-your-mental-health/?utm_source=chatgpt.com">
+            <article>
+                <h3>Mental health benefits of watching cartoons</h3>
+                <p>This article discussed the mental health benefits of watching cartoons such as aiding in stress and problem solving.</p>
+            </article>
+        </a>
+
+        <a class="block" href="https://files.eric.ed.gov/fulltext/EJ1416962.pdf?utm_source=chatgpt.com">
+            <article>
+                <h3>Benefits of cartoons on language learning for English learners</h3>
+                <p>This article discusses how cartoons can aid in learning English for people who are learning English </p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class="footer">
+            <a href="#">Learn More</a>
+            <a href="#">Contact our team</a>
+        </div> 
+        
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
+    </body>
+</html>
