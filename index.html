@@ -17,6 +17,9 @@
         <link rel="icon" href="./img/logo.jpg">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     
     <body>
@@ -39,7 +42,7 @@
                 <li><a href="#event-info">Event Information</a></li>
                 <li><a href="#event-schedule">Schedule</a></li>
                 <li><a href="#links">Links </a></li>
-                <li><button id="theme-button">Toggle Dark Mode</button> </li>
+                <li><button id="theme-button"><img id="button-symbol" src="./img/dark_mode.png" alt="Light mode"></button> </li>
             </ul>
         </div>
 
@@ -67,11 +70,43 @@
                 <h3>Sports get a toon-up!</h3>
             </div>
             <div class="button-container">
-                <button class="header-button" type="button">Guidelines</button>
-                <button class="header-button" type="button">Featured Events</button>
+                <button id="expectations-button" class="header-button" type="button">Show Expectations</button>
+                <button id="featured-events" class="header-button" type="button">Show Featured Events</button>
             </div>
-
         </div>
+        <div class="expectations-info">
+            <h3>What to Expect</h3>
+            <h4>Tag Line</h4>
+            <ul>
+                <li> <b>Bullet 1:</b> <i>Description</i></li>
+                <li> <b>Bullet 2:</b> <i>Description</i></li>
+                <li> <b>Bullet 3:</b> <i>Description</i></li>
+            </ul>
+        </div>
+
+
+        <div class="primary-events-container">
+            <h3>Featured Events</h3>
+            <div class="primary-events">
+                <div class="event-item">
+                    <img alt="Basketball" src="./img/basketball.jpeg" />
+                    <h3>Basketball</h3>
+                </div>
+
+                    
+                <div class="event-item">
+                    <img alt="Soccer" src="./img/soccer.jpeg" />
+                    <h3>Soccer</h3>
+                </div>
+
+
+                <div class="event-item">
+                    <img alt="Tennis" src="./img/tennis.jpeg" />
+                    <h3>Tennis</h3>
+                </div>
+            </div>
+        </div>        
+
 
 
         
@@ -103,13 +138,6 @@
         </div>
 
 
-        <h3>What to Expect</h3>
-        <h4>Tag Line</h4>
-        <ul>
-            <li> <b>Bullet 1:</b> <i>Description</i></li>
-            <li> <b>Bullet 2:</b> <i>Description</i></li>
-            <li> <b>Bullet 3:</b> <i>Description</i></li>
-        </ul>
 
         <!-- schedule
 
@@ -144,10 +172,123 @@
                 <h3>Tennis</h3>
                 <p>Watch toons have fun in a enjoyable tennis match</p>
             </div>
+            <div class="event-item">
+                <img alt="Racing" src="./img/racing.png" />
+                <h3>Race</h3>
+                <p>Toons are in a fun competition to see who is fastest on track</p>
+            </div>
+
+                
+            <div class="event-item">
+                <img alt="Skiing" src="./img/skiing.png" />
+                <h3>Skiing</h3>
+                <p>Toons are trying to skii their way to victory</p>
+            </div>
+
+
+            <div class="event-item">
+                <img alt="Boat Racing" src="./img/boat-race.png" />
+                <h3>Boat Race</h3>
+                <p>Toons take to the water to boat race and win</p>
+            </div>
+        </div>
+        
+        <div class="event-container" id="extra-events">
+            <div class="event-item">
+                <img alt="Golf" src="./img/golf.png" />
+                <h3>Golf</h3>
+                <p>Concentration is important as toons try to score a hole-in-one </p>
+            </div>
+
+                
+            <div class="event-item">
+                <img alt="Bowling" src="./img/bowling.png" />
+                <h3>Bowling</h3>
+                <p>Toons try to see who bow a strike</p>
+            </div>
+
+
+            <div class="event-item">
+                <img alt="Track and Field" src="./img/track-and-field.png" />
+                <h3>Track and Field</h3>
+                <p>Toons engage in a track-and-field to see who is most athletic</p>
+            </div>
+            <div class="event-item">
+                <img alt="Obstacle Course" src="./img/obstacle-course.png" />
+                <h3>Obstacle Course</h3>
+                <p>Toons put all of their mental and physical skills to the test to see who can finish the obstacle course </p>
+            </div>
+
+                
+            <div class="event-item">
+                <img alt="Playing Music" src="./img/playing-music.png" />
+                <h3>Music</h3>
+                <p>Toons play a variety of different to see who sounds best.</p>
+            </div>
+
+
+            <div class="event-item">
+                <img alt="Chess" src="./img/chess.png" />
+                <h3>Chess</h3>
+                <p>Toons enagge the stategic game of chess</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="header-button" id="view-button">View More</button>
         </div>
 
 
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        
+<!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    The toons are getting ready. Make sure that you RSVP, so you can be the first to know
+                    when the toons are in action playing some of your favorite sports.
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Johnny from Texas has RSVP'd.</p>
+                    <p>🎟️ Billy from California has RSVP'd.</p>
+                    <p>🎟️ Teresa from Missouri has RSVP'd.</p>
+                    <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                     <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                     </div>
+                    <div class="form-field">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">                        
+                    </div>
+                </form>
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>      
+        </div>
+
         <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
 
         <!-- links

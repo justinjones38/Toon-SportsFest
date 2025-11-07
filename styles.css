@@ -60,7 +60,7 @@ body {
 h1 {
     text-align: center;
     font-size: clamp(3.5rem, 60%, 5rem);
-    font-family: "Impact";
+    font-family: "Luckiest Guy","Impact";
     color: #FF8C36
 }
 h2 {
@@ -69,7 +69,7 @@ h2 {
 
 .header-container h3 {
     color: blue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Quicksand", "Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: clamp(1.8rem, 70%, 2.5rem);
     font-weight: 1000;
     text-align: center;
@@ -129,6 +129,31 @@ h2 {
     text-decoration: underline;
 }
 
+/* CSS code for expectations  */
+.expectations-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.3rem;
+    
+}
+
+
+/* CSS code for primary events */
+.primary-events-container {
+    display: none;
+}
+
+.primary-events-container h3 {
+    text-align: center;
+}
+
+.primary-events {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 
 
 /*** footer ***
@@ -173,19 +198,21 @@ h2 {
 
 .navbar ul li {
     float: left;
-    margin: 10px;
+    margin: 0 0.4rem 0.2rem 0;
+    padding: 0.4rem
 }
 
 .navbar ul li a {
     display: block;
-    text-decoration: none;
     color: white;
+    padding: 0.3rem
 
 }
 
 .navbar ul li a:hover {
-   text-decoration: underline;
-   color: white; 
+   border: 1px white solid;
+   text-decoration: none;
+   box-shadow: 0 0 2px white, 0 0 4px white;
 }
 
 
@@ -203,7 +230,7 @@ h2 {
 .event-info-container {
     margin-bottom: 2rem;
 }
-#event-info {
+.event-info {
     margin-bottom: 1.2rem;
 }
 
@@ -228,28 +255,38 @@ h2 {
 }
 
 .event-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
 }
 
+.event-container .event-item img{
+    height: 13rem;
+}
+
 .event-item {
-    border: 4px black solid;
+    border: 4px #FF5F1F solid;
+    border-radius: 1.3rem;
+    background-color: #F7F7F7;
+    box-shadow: 0 0 10px #FF5F1F;
     margin: 1.5rem;
-    width: 18rem;
+    min-width: 10rem;
     height: auto;
-    padding: 2rem;
     transition: scale 1s ease-in-out;
+    overflow: hidden;
+    padding: 0 0.3rem 0.4rem 0.3rem;
 
 }
 
 .event-item:hover {
-    scale: 1.08;
+    scale: 1.05;
 }
 
 .event-item img {
     display: block;
     margin: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 .event-item h3 {
@@ -261,7 +298,17 @@ h2 {
 .event-item p {
     width: 100%;
     color: black;
+    padding-left: 0.8rem;
+    padding-right: 0.2rem;
 }
+
+/* Extra Events section: 
+    I want to hide 6 of the events and 
+    display them with JS */
+#extra-events {
+    display: none;
+}
+
 
 /*** Links Section ***
   
@@ -304,25 +351,60 @@ a:active {
 }
 
 
-/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+
+/* Add other rsvp-related selectors here */
+
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
 
 /* Default dark mode style */
 
 #theme-button {
-    background-color: orange;
-    border-radius: 5rem;
+    background-color: #FF8C36;
     padding-right: 0.7rem;
     padding-left: 0.7rem;
-    border: thin;
-    color: white;
+    padding-top: 0.3rem;
+    border: none;
 }
 
 #theme-button:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
+
+#theme-button img {
+    height: 1.4rem;
+}
+
 
 .dark-mode {
     background-color: #1E1E1E;
@@ -340,12 +422,8 @@ a:active {
 }
 
 .dark-mode .event-item {
-    border: 3px solid white;
+    border: 3px solid orange;
 }
-.dark-mode .event-container h3, .dark-mode .event-container p  {
-    color: white;
-}
-
 
 .dark-mode #links {
     color: white;
@@ -393,9 +471,33 @@ a:active {
     --error-color-border: #e63946;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 700px) {
     .button-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .header-button {
+        width: 60%;
+    }
+
+    .event-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .primary-events {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 410px) {
+    .event-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
